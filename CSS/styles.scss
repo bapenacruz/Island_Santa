@@ -1,0 +1,93 @@
+$color-primary: #2b2d42;
+$color-secondary: #003e1f;
+$color-pale: #FFFFFF;
+$color-mid: #A5FFD6;
+$color-dark: #FF686B;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Open Sans", sans-serif;
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+h2 {
+    color: $color-primary;
+}
+
+header h2 {
+    color: $color-primary;
+}
+
+.site-footer {
+    background-image: linear-gradient(#ffa69e, $color-dark);
+    
+    z-index: 100;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+.navbar {
+    background-color: $color-dark;
+}
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+
+#header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+.modal-body {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.modal-header  {
+    background-color: $color-mid;
+    color: $color-primary;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.darkBG {
+    background-color: $color-primary;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel {
+    border: solid $color-secondary;
+}
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}

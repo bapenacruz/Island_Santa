@@ -1,0 +1,73 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Open Sans", sans-serif; }
+
+h2 {
+  color: #2b2d42; }
+
+header h2 {
+  color: #2b2d42; }
+
+.site-footer {
+  background-image: linear-gradient(#ffa69e, #FF686B);
+  z-index: 100; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-color: #FF686B; }
+
+.tab-content {
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 10px; }
+
+#header {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100; }
+
+.modal-body {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.modal-header {
+  background-color: #A5FFD6;
+  color: #2b2d42; }
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.darkBG {
+  background-color: #2b2d42; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: solid #003e1f; }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
