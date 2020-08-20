@@ -15,6 +15,15 @@ header h2 {
   z-index: 100;
   font-size: 13px; }
 
+.footer {
+  background-image: linear-gradient(#ffa69e, #FF686B);
+  z-index: 100;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none; }
+
 .btn {
   font-size: 13px; }
 
@@ -98,3 +107,18 @@ header h2 {
 #sendMailBtn {
   background-color: #003e1f;
   color: #FFFFFF; }
+
+.recorded {
+  background-image: url("../img/christmastable.jpg");
+  background-size: cover; }
+
+#accordion .collapsed, #accordion .card-body, #accordion .card {
+  background-color: #2b2d42;
+  border: none;
+  color: #FFFFFF;
+  margin-top: 5px; }
+
+#offAir {
+  margin-bottom: 5px;
+  border: 5px solid black;
+  border-radius: 10px; }
