@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     $(".carousel").carousel( { interval: 2000 } );
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
@@ -10,5 +10,18 @@ $(function() {
             $("#carouselButton").children("i").removeClass("fa-play");
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
+    });
+});
+
+$(document).ready(function() {
+    $("#signInBtn").click(function(){
+            $("#logBtn").children("i").removeClass("fa fa-sign-in fa-lg");
+            $("#logBtn").children("i").addClass("far fa-user fa-lg");
+    });
+});
+
+$(document).ready(function() {
+    $("#sendMailBtn").click(function(){
+        $("#thankYou").modal();
     });
 });

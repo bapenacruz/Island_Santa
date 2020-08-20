@@ -26,8 +26,16 @@ header h2 {
 
 .site-footer {
     background-image: linear-gradient(#ffa69e, $color-dark);
-    
     z-index: 100;
+    font-size: 13px;
+}
+
+.btn{
+    font-size: 13px;
+}
+
+.text-nowrap {
+    white-space: nowrap;
 }
 
 .row-content {
@@ -37,6 +45,18 @@ header h2 {
 }
 .navbar {
     background-color: $color-dark;
+    font-size: 13px;
+    text-align: center;
+}
+#dropdown-menu {
+    background-color: $color-mid;
+    font-size: 13px;
+    text-align: initial;
+}
+#subdropdown-menu {
+    background-color: $color-dark;
+    font-size: 13px;
+    text-align: initial;
 }
 .tab-content {
     border: 1px solid #DDD;
@@ -73,7 +93,7 @@ header h2 {
     top:0;
     height:100%;
     width:100%;
-    position:absolute;
+    position: absolute;
 }
 
 .darkBG {
@@ -82,12 +102,22 @@ header h2 {
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.carousel {
-    border: solid $color-secondary;
+.carousel-indicators li{
+    background-color: $color-secondary;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
 }
-#carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-control-prev .fas, .carousel-control-next .fas {
+    color: $color-secondary;
+    font-size: 40px;
+}
+#sendMailBtn {
+    background-color: $color-secondary;
+    color: $color-pale;
 }
