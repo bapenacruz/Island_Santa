@@ -7,22 +7,18 @@ h1, h2, h3 {
 h2 {
   color: #2b2d42; }
 
+h4 {
+  color: #A5FFD6; }
+
 header h2 {
   color: #2b2d42; }
 
 .site-footer {
   background-image: linear-gradient(#ffa69e, #FF686B);
   z-index: 100;
-  font-size: 13px; }
-
-.footer {
-  background-image: linear-gradient(#ffa69e, #FF686B);
-  z-index: 100;
   font-size: 13px;
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  border: none; }
+  width: 100%; }
 
 .btn {
   font-size: 13px; }
@@ -115,10 +111,16 @@ header h2 {
 #accordion .collapsed, #accordion .card-body, #accordion .card {
   background-color: #2b2d42;
   border: none;
-  color: #FFFFFF;
+  color: #A5FFD6;
   margin-top: 5px; }
 
-#offAir {
+#offAir, .vidcontainer {
   margin-bottom: 5px;
   border: 5px solid black;
+  border-radius: 10px; }
+
+.countdown {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 5px solid #A5FFD6;
   border-radius: 10px; }

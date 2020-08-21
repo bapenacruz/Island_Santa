@@ -19,6 +19,9 @@ h1, h2, h3 {
 h2 {
     color: $color-primary;
 }
+h4 {
+    color: $color-mid;
+}
 
 header h2 {
     color: $color-primary;
@@ -28,16 +31,8 @@ header h2 {
     background-image: linear-gradient(#ffa69e, $color-dark);
     z-index: 100;
     font-size: 13px;
-}
-
-.footer {
-    background-image: linear-gradient(#ffa69e, $color-dark);
-    z-index: 100;
-    font-size: 13px;
     position: absolute;
-    bottom: 0;
     width: 100%;
-    border: none;
 }
 
 .btn{
@@ -138,14 +133,17 @@ header h2 {
 #accordion .collapsed, #accordion .card-body, #accordion .card {
     background-color: $color-primary;
     border: none;
-    color: $color-pale;
+    color: $color-mid;
     margin-top: 5px;
 }
-#offAir {
+#offAir, .vidcontainer {
     margin-bottom: 5px;
     border: 5px solid black;
     border-radius: 10px;
 }
-#calendar {
-    
+.countdown {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 5px solid $color-mid;
+    border-radius: 10px;
 }
