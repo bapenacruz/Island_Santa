@@ -22,6 +22,9 @@ h2 {
 h4 {
     color: $color-mid;
 }
+h1 {
+    color: $color-dark;
+}
 
 header h2 {
     color: $color-primary;
@@ -33,6 +36,14 @@ header h2 {
     font-size: 13px;
     position: absolute;
     width: 100%;
+}
+.site-footerb {
+    background-image: linear-gradient(#ffa69e, $color-dark);
+    z-index: 100;
+    font-size: 13px;
+    position: fixed;
+    width: 100%;
+    bottom:0;
 }
 
 .btn{
@@ -122,12 +133,14 @@ header h2 {
     color: $color-secondary;
     font-size: 40px;
 }
-#sendMailBtn {
-    background-color: $color-secondary;
-    color: $color-pale;
+
+#questionBtn, #sendMailBtn, #reserveBtn  {
+    background-color: $color-dark;
+    color: $color-primary;
+    border: none;
 }
 .recorded {
-    background-image: url("../img/christmastable.jpg");
+    background-image: url("img/christmastable.jpg");
     background-size: cover;
 }
 #accordion .collapsed, #accordion .card-body, #accordion .card {
@@ -146,4 +159,20 @@ header h2 {
     margin-top: 5px;
     border: 5px solid $color-mid;
     border-radius: 10px;
+}
+#socialmedia {
+    display: flex;
+    justify-content: center;
+}
+#youtube{
+    color: #c4302b;
+}
+#facebook {
+    color: #3b5998;
+}
+#instagram{
+    color: #3f729b;
+}
+#twitter{
+    color: #1da1f2;
 }

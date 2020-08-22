@@ -168,7 +168,7 @@
         </div>
     </div>
 
-    <div id="thankYou" class="modal fade" role="dialog">
+    <div id="reservationConfirmation" class="modal fade" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="col-12 modal-header">
@@ -186,28 +186,16 @@
     <div class="container">
         <div class="row row-content">
             <div class="col-12 text-center">
-                <h2>Send Santa a Note!</h2>
+                <h1>Reserve Time with Santa</h1>
                 <hr />
             </div>
             <div class="col">
                 <form>
                     <form>
                         <div class="form-group row">
-                            <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                            <label for="pName" class="col-md-2 col-form-label">Parent's Full Name</label>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="birthDate" class="col-md-2 col-form-label">Date of Birth</label>
-                            <div class="col-md-10">
-                                <input type="date" class="form-control" id="birthDate" name="birthDate" placeholder="MM/DD/YYYY" />
+                                <input type="text" class="form-control" id="pName" name="pName" placeholder="Parent's Name" />
                             </div>
                         </div>
                         <div class="form-group row">
@@ -217,14 +205,84 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <label for="cName" class="col-md-2 col-form-label">Child's Full Name</label>
                             <div class="col-md-10">
-                                <textarea class="form-control" id="feedback" name="feedback" rows="15" placeholder="Dear Santa,"></textarea>
+                                <input type="text" class="form-control" id="cName" name="cName" placeholder="Last Name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="birthDate" class="col-md-2 col-form-label">Child's Date of Birth</label>
+                            <div class="col-md-10">
+                                <input type="date" class="form-control" id="birthDate" name="birthDate" placeholder="MM/DD/YYYY" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="gender" class="col-md-2 col-form-label">Child's Gender</label>
+                            <div class="col-md-10">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male <i class="fas fa-mars"></i></label><br>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female <i class="fas fa-venus"></i></label><br>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other <i class="fas fa-transgender"></i></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="aDate" class="col-md-2 col-form-label">Request Date of Activity</label>
+                            <div class="col-md-10">
+                                <input type="date" class="form-control" id="aDate" name="aDate" placeholder="MM/DD/YYYY" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="length" class="col-md-2 col-form-label">Activity Length</label>
+                            <div class="col-md-10">
+                                <input type="radio" id="15" name="platform" value="15">
+                                <label for="15">15 Minutes</i></label><br>
+                                <input type="radio" id="30" name="platform" value="30">
+                                <label for="30">30 Minutes</i></label><br>
+                                <input type="radio" id="45" name="platform" value="45">
+                                <label for="45">45 minutes</label><br>
+                                <input type="radio" id="1hr" name="platform" value="1hr">
+                                <label for="1hr">1 hour</label><br>
+                                <div class="col-3">
+                                    <input type="text" class="form-control" id="other" name="other" placeholder="Duration" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="platform" class="col-md-2 col-form-label">Messaging Platform</label>
+                            <div class="col-md-10">
+                                <input type="radio" id="messenger" name="platform" value="messenger">
+                                <label for="messenger">Messenger <i class="fab fa-facebook-messenger"></i></label><br>
+                                <input type="radio" id="whatsapp" name="platform" value="whatsapp">
+                                <label for="whatsapp">Whatsapp <i class="fab fa-whatsapp"></i></label><br>
+                                <input type="radio" id="skype" name="platform" value="skype">
+                                <label for="skype">Skype <i class="fab fa-skype"></i></label><br>
+                                <input type="radio" id="zoom" name="platform" value="zoom">
+                                <label for="zoom">Zoom <i class="fas fa-video"></i></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="phone" class="col-md-2 col-form-label">Phone #</label>
+                            <div class="col-md-10">
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" placeholder="787 ###-####" required />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for=requests class="col-md-2 col-form-label">Insight</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="requests" name="requests" rows="3" placeholder="Input here you requests for the activity. For example: story telling, behavioral check, selfie with santa, etc." ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="insigt" class="col-md-2 col-form-label">Insight</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="insight" name="insight" rows="4" placeholder="Input here anything you want Santa to know about. For example: child behavior, siblings, gifts, grades, etc." ></textarea>
                             </div>
                         </div>
                         <div class="form-group row text-center">
                             <div class="offset-md-2 col-md-10">
-                                <button type="button" class="btn btn-primary" id="sendMailBtn">Send Mail</button>
+                                <button type="button" class="btn btn-primary" id="reserveBtn">Submit Reservation Application</button>
                             </div>
                         </div>
                     </form>
@@ -237,8 +295,8 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-start align-self-center">
-                    <a class="button mr-1" href="http://instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a class="button mr-1" href="http://facebook.com/"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a class="button mr-1" href="https://www.instagram.com/islandsantaclaus/?hl=en/"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a class="button mr-1" href="https://www.facebook.com/santaclausponcepr/"><i class="fab fa-facebook fa-lg"></i></a>
                     <a class="button mr-1" href="http://twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
                     <a class="button" href="http://youtube.com/"><i class="fab fa-youtube fa-lg"></i></i></a>
                 </div>
