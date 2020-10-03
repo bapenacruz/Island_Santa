@@ -25,9 +25,3 @@ $(document).ready(function() {
         $("#thankYou").modal();
     });
 });
-
-$(document).ready(function() {
-    $("#reserveBtn").click(function(){
-        $("#reservationConfirmation").modal();
-    });
-});
